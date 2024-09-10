@@ -24,6 +24,7 @@ body {
     background-color: rgba(40, 40, 40, 0.9);
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Убедитесь, что top-bar находится над другими элементами */
 }
 
 .logo {
@@ -36,6 +37,7 @@ body {
 .nickname {
     font-size: 1.5em;
     color: #ffffff;
+    margin-left: 10px; /* Добавляем отступ слева, чтобы текст не прилипал к логотипу */
 }
 
 .container {
@@ -106,6 +108,7 @@ p {
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
+    display: inline-block; /* Добавляем display для выравнивания */
 }
 
 .bottom-bar a:hover {
