@@ -26,7 +26,7 @@ function showGitHub() {
     fetch(githubReposApiUrl)
         .then(response => response.json())
         .then(repos => {
-            let repoList = `<h2>GitHub Repositories</h2><ul>`;
+            let repoList = `<h2>GitHub Repositories</h2><ul class="no-bullets">`;
             repos.forEach(repo => {
                 repoList += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a> - ${repo.description ? repo.description : 'No description'}</li>`;
             });
@@ -50,7 +50,7 @@ function showCertificates() {
         .then(response => response.text())
         .then(text => {
             const lines = text.trim().split('\n');
-            let certificateList = `<h2>Certificates</h2><ul>`;
+            let certificateList = `<h2>Certificates</h2><ul class="no-bullets">`;
             lines.forEach(line => {
                 const [name, link] = line.split(', ');
                 certificateList += `<li><a href="${link}" target="_blank">${name}</a></li>`;
@@ -75,7 +75,7 @@ function showHTB() {
         .then(response => response.text())
         .then(text => {
             const lines = text.trim().split('\n');
-            let htbList = `<h2>HTB Completed Rooms</h2><ul>`;
+            let htbList = `<h2>HTB Completed Rooms</h2><ul class="no-bullets">`;
             lines.forEach(line => {
                 const [name, difficulty, link] = line.split(', ');
                 htbList += `<li>${name} - ${difficulty}: <a href="${link}" target="_blank">Link</a></li>`;

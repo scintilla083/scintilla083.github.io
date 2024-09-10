@@ -24,7 +24,6 @@ body {
     background-color: rgba(40, 40, 40, 0.9);
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Убедитесь, что top-bar находится над другими элементами */
 }
 
 .logo {
@@ -37,7 +36,6 @@ body {
 .nickname {
     font-size: 1.5em;
     color: #ffffff;
-    margin-left: 10px; /* Добавляем отступ слева, чтобы текст не прилипал к логотипу */
 }
 
 .container {
@@ -93,6 +91,19 @@ p {
     transition: opacity 0.5s ease;
 }
 
+/* Убираем маркеры списка и выравниваем текст по левой границе для всех ul с классом no-bullets */
+ul.no-bullets {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+    margin: 0; /* Убираем внешний отступ для списка */
+}
+
+ul.no-bullets li {
+    margin: 0; /* Убираем отступы между элементами списка */
+    padding-left: 0; /* Убираем внутренний отступ слева у элементов списка */
+    text-align: left; /* Выравниваем текст по левой границе */
+}
+
 .bottom-bar {
     position: fixed;
     bottom: 0;
@@ -108,38 +119,8 @@ p {
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
-    display: inline-block; /* Добавляем display для выравнивания */
 }
 
 .bottom-bar a:hover {
     color: #ff9800;
-}
-/* Основной стиль для ссылок */
-a {
-    color: #ffffff; /* Белый цвет ссылки */
-    text-decoration: none; /* Без подчеркивания */
-}
-
-/* Цвет ссылки при наведении курсора */
-a:hover {
-    color: #cccccc; /* Светло-серый цвет при наведении */
-}
-
-/* Цвет ссылки при активном состоянии (клик) */
-a:active {
-    color: #999999; /* Темно-серый цвет при нажатии */
-}
-
-/* Цвет ссылки, когда она посещена */
-a:visited {
-    color: #e0e0e0; /* Серый цвет для посещенных ссылок */
-}
-
-/* Цвет ссылок внутри контейнера с сертификатами и т.д. */
-.bottom-bar a {
-    color: #ffffff; /* Белый цвет ссылок в нижней панели */
-}
-
-.bottom-bar a:hover {
-    color: #cccccc; /* Светло-серый цвет при наведении в нижней панели */
 }
