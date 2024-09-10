@@ -1,6 +1,6 @@
 // Функция для получения данных профиля GitHub
 function getGitHubProfile() {
-    const githubUsername = "scintilla083"; // Твой никнейм на GitHub
+    const githubUsername = "scintilla083"; // Ваш никнейм на GitHub
     const githubApiUrl = `https://api.github.com/users/${githubUsername}`;
 
     fetch(githubApiUrl)
@@ -45,33 +45,51 @@ function showGitHub() {
 function showCertificates() {
     const content = document.getElementById('content');
     content.style.opacity = 0;
-    setTimeout(() => {
-        content.innerHTML = `
-            <h2>Certificates</h2>
-            <ul>
-                <li>Certified Ethical Hacker (CEH)</li>
-                <li>CompTIA Security+</li>
-                <li>Google Cloud Certification</li>
-            </ul>
-        `;
-        content.style.opacity = 1;
-    }, 500);
+
+    fetch('certificates.txt')
+        .then(response => response.text())
+        .then(text => {
+            const lines = text.trim().split('\n');
+            let certificateList = `<h2>Certificates</h2><ul>`;
+            lines.forEach(line => {
+                const [name, link] = line.split(', ');
+                certificateList += `<li><a href="${link}" target="_blank">${name}</a></li>`;
+            });
+            certificateList += `</ul>`;
+
+            setTimeout(() => {
+                content.innerHTML = certificateList;
+                content.style.opacity = 1;
+            }, 500);
+        })
+        .catch(error => {
+            console.error('Ошибка при получении сертификатов:', error);
+        });
 }
 
 function showHTB() {
     const content = document.getElementById('content');
     content.style.opacity = 0;
-    setTimeout(() => {
-        content.innerHTML = `
-            <h2>HTB Completed Rooms</h2>
-            <ul>
-                <li>Room 1: <a href="https://www.hackthebox.com/room1" target="_blank">Link</a></li>
-                <li>Room 2: <a href="https://www.hackthebox.com/room2" target="_blank">Link</a></li>
-                <li>Room 3: <a href="https://www.hackthebox.com/room3" target="_blank">Link</a></li>
-            </ul>
-        `;
-        content.style.opacity = 1;
-    }, 500);
+
+    fetch('htb_rooms.txt')
+        .then(response => response.text())
+        .then(text => {
+            const lines = text.trim().split('\n');
+            let htbList = `<h2>HTB Completed Rooms</h2><ul>`;
+            lines.forEach(line => {
+                const [name, difficulty, link] = line.split(', ');
+                htbList += `<li>${name} - ${difficulty}: <a href="${link}" target="_blank">Link</a></li>`;
+            });
+            htbList += `</ul>`;
+
+            setTimeout(() => {
+                content.innerHTML = htbList;
+                content.style.opacity = 1;
+            }, 500);
+        })
+        .catch(error => {
+            console.error('Ошибка при получении данных HTB:', error);
+        });
 }
 
 // Вызов функции при загрузке страницы
