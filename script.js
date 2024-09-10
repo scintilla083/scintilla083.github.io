@@ -50,12 +50,12 @@ function showCertificates() {
         .then(response => response.text())
         .then(text => {
             const lines = text.trim().split('\n');
-            let certificateList = `<h2>Certificates</h2><ul class="no-bullets">`;
+            let certificateList = `<h2>Certificates</h2><div class="certificates-container"><ul class="no-bullets">`;
             lines.forEach(line => {
                 const [name, link] = line.split(', ');
                 certificateList += `<li><a href="${link}" target="_blank">${name}</a></li>`;
             });
-            certificateList += `</ul>`;
+            certificateList += `</ul></div>`;
 
             setTimeout(() => {
                 content.innerHTML = certificateList;
