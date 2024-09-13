@@ -1,1 +1,3 @@
 Sea, easy, https://www.hackthebox.com/achievement/machine/1242702/620
+Lantern, hard, https://www.hackthebox.com/achievement/machine/1242702/621
+Sightless, easy, https://app.hackthebox.com/machines/Sightless
