@@ -4,7 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## About Me
 
 I’m **scintilla083**, a software developer with a deep focus on **Python** and its ecosystem. Over the years, I’ve honed my skills in building scalable web applications, primarily using **Django** and **Django REST Framework**. My expertise extends to automating tasks and building Telegram bots with **Aiogram**, as well as scraping and extracting data using tools like **Selenium** and **BeautifulSoup**.
 
