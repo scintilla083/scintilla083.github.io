@@ -7,7 +7,7 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Timezone settings
-timezone:
+timezone: "UTC"
 
 # jekyll-seo-tag settings
 title: scintilla083 # the main title
@@ -37,7 +37,7 @@ social:
 # Site Verification Settings (Add your verification codes here)
 webmaster_verifications:
   google: kVbbrA-InOqtRkaypkr-poiCcUjAfak2-Blhg85ViCI
-  bing: # fill in your Bing verification code
+  bing: 3C1A7D4ED17FD2F7EF023D732807D125
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
