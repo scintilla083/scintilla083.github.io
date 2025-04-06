@@ -44,7 +44,7 @@ webmaster_verifications:
   facebook: # fill in your Facebook verification code
 
 # SEO settings for Open Graph
-social_preview_image: /assets/your-image.jpg # Path to social preview image
+social_preview_image: /assets/favicon.jpg # Path to social preview image
 
 # Open Graph Meta Tags
 opengraph:
@@ -52,7 +52,7 @@ opengraph:
   title: scintilla083 - Python Developer & Web Security Enthusiast
   description: Personal blog of a Python developer specializing in web development, automation, reverse engineering, and web security.
   url: "https://scintilla083.github.io"
-  image: /assets/your-image.jpg # Path to social preview image
+  image: /assets/favicon.jpg # Path to social preview image
   locale: en_US
 
 # Web Analytics Settings
