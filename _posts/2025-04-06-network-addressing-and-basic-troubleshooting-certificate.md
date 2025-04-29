@@ -2,7 +2,7 @@
 layout: post
 title: "Obtained 'Network Addressing and Basic Troubleshooting' Certificate"
 date: 2025-04-06
-categories: [fifth semester, certificates]
+categories: [fifth semester/certificates]
 tags: [certificate, cybersecurity, fifth semester]
 ---
 
