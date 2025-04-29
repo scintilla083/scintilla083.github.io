@@ -2,7 +2,7 @@
 layout: post
 title: "Obtained 'Endpoint Security' Certificate"
 date: 2025-04-29
-categories: [sixth semester, certificates]
+categories: [sixth semester - certificates]
 tags: [certificate, cybersecurity, sixth semester]
 ---
 
