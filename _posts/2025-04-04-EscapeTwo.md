@@ -1,6 +1,7 @@
 ---
 title: "Completed EscapeTwo on Hack The Box"
 date: 2025-04-04
+categories: [sixth semester, machines]
 tags: [HTB, CTF, cybersecurity, sixth semester]
 ---
 

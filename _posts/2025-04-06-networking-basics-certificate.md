@@ -2,7 +2,7 @@
 layout: post
 title: "Obtained 'Networking Basics' Certificate"
 date: 2025-04-06
-categories: [Certificates, Education]
+categories: [fifth semester, certificates]
 tags: [certificate, cybersecurity, fifth semester]
 ---
 
