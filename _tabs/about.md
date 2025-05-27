@@ -40,3 +40,13 @@ title: "Резюме"
 ### 3. CTF Telegram Bot  
 Інтерактивний CTF квест з переможцями та вибором завдання  
 **Стек:** aiogram, PostgreSQL, Docker  
+
+---
+
+## Участь в CTF
+
+### 1. DeadSec CTF 2024 
+
+### 2. picoCTF 2025
+
+### 3. University CTF 2023 Brains & Bytes 
