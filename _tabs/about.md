@@ -41,7 +41,6 @@ title: "Резюме"
 - **Бази даних:** PostgreSQL, MySQL  
 - **Інфраструктура:** Docker, Redis  
 - **Додатково:** Основи Reverse Engineering, Web Application Pentesting  
-- **Розгортання середовища розробки:** через Docker  
 
 ---
 
