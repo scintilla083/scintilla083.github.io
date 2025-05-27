@@ -5,6 +5,9 @@ order: 4
 title: "Резюме"
 ---
 
+<div style="display: flex; align-items: center; justify-content: space-between;">
+
+<div>
 
 # Микита Верзілов
 
@@ -12,6 +15,15 @@ title: "Резюме"
 📧 [ytrewqgl5890@gmail.com](mailto:ytrewqgl5890@gmail.com)  
 🔗 [GitHub](https://github.com/scintilla083)
 
+</div>
+
+<div>
+
+<img src="/assets/face.png" alt="Фото Микита Верзілов" style="width:150px; border-radius: 10px;" />
+
+</div>
+
+</div>
 ---
 
 ## Мета
