@@ -50,3 +50,6 @@ title: "Резюме"
 ### 2. picoCTF 2025
 
 ### 3. University CTF 2023 Brains & Bytes 
+
+---
+
