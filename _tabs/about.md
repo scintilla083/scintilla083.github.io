@@ -5,19 +5,19 @@ order: 4
 title: "Резюме"
 ---
 
-<div style="display: flex; align-items: center; justify-content: space-between;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 2rem;">
 
-<div>
+<div style="flex: 1;">
 
-# Микита Верзілов
+<h1>Микита Верзілов</h1>
 
-📞 0961530221  
-📧 [ytrewqgl5890@gmail.com](mailto:ytrewqgl5890@gmail.com)  
-🔗 [GitHub](https://github.com/scintilla083)
+<p>📞 0961530221</p>
+<p>📧 <a href="mailto:ytrewqgl5890@gmail.com">ytrewqgl5890@gmail.com</a></p>
+<p>🔗 <a href="https://github.com/scintilla083" target="_blank">GitHub</a></p>
 
 </div>
 
-<div>
+<div style="flex-shrink: 0;">
 
 <img src="/assets/face.png" alt="Фото Микита Верзілов" style="width:150px; border-radius: 10px;" />
 
